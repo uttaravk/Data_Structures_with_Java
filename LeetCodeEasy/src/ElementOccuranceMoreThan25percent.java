@@ -6,8 +6,6 @@
 //Input: arr = [1,2,2,6,6,6,6,7,10]
 //Output: 6
 
-import java.util.HashMap;
-
 public class ElementOccuranceMoreThan25percent {
     public int findSpecialInteger(int[] arr) {
         int arrLen = arr.length;
