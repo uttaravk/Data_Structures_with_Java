@@ -18,7 +18,21 @@ public class Main {
         co.countOccurances("We love you and you love us");
 
         ReturnAllCombinations returnAllCombinations = new ReturnAllCombinations();
-        System.out.println(returnAllCombinations.returnAllCombinations(new ArrayList<>(Arrays.asList(1, 2, 3, 5, 8)), 10));
+        System.out.println(
+                returnAllCombinations.returnAllCombinations(
+                        new ArrayList<>(Arrays.asList(1, 2, 3, 5, 8)), 10));
 
+        SingleLinkedList singleLinkedList = new SingleLinkedList(5);
+        singleLinkedList.deleteNodeAtEnd();
+        singleLinkedList.insertNodeAtEnd(10);
+        singleLinkedList.insertNodeAtEnd(15);
+        singleLinkedList.insertNodeAtStart(3);
+        singleLinkedList.insertNodeAtPosition(2, 7);
+        singleLinkedList.insertNodeAtPosition(10, 20);
+        singleLinkedList.insertNodeAtStart(2);
+        singleLinkedList.deleteNodeAtStart();
+        singleLinkedList.deleteNodeAtPosition(1);
+        System.out.println("Length of linked list: " + singleLinkedList.getLinkedListLength());
+        singleLinkedList.printSingleLinkedList();
     }
 }
