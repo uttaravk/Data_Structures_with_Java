@@ -59,6 +59,11 @@ public class Main {
     System.out.print("\nResultant Array: ");
     printArray(nums3);
     System.out.println("\nResultant Position: " + result3 + "\n");
+
+    int[] numsSmallRange = {1,3,6};
+    int k = 3;
+    SmallestRange1 smallestRange1 = new SmallestRange1();
+    System.out.println(smallestRange1.smallestRangeI(numsSmallRange, k));
   }
 
   public static void printArray(int[] array) {
