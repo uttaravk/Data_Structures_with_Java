@@ -69,6 +69,10 @@ public class Main {
         SingleNumber sn = new SingleNumber();
         System.out.println("Single Number: "+sn.singleNumber(numsSingleNum));
 
+        int[] numsParity = {3,1,2,4};
+        SortArrayByParity sp = new SortArrayByParity();
+        printArray(sp.sortArrayByParity(numsParity));
+
     }
 
     public static void printArray(int[] array) {
